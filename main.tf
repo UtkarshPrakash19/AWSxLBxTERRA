@@ -49,7 +49,7 @@ resource "aws_instance" "web1" {
               EOF
 
   tags = {
-    Name = "WebServer1"
+    Name = "WebServer101"
   }
 }
 
@@ -69,7 +69,7 @@ resource "aws_instance" "web2" {
               EOF
 
   tags = {
-    Name = "WebServer2"
+    Name = "WebServer202"
   }
 }
 
