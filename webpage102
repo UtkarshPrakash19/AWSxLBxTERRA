@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server 2 - Welcome</title>
+    <style>
+        body {
+            background-color: #fff0f0;
+            color: #4a4a4a;
+            font-family: 'Verdana', sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <h1>🙌 Welcome to Server 2</h1>
+    <p>This page is served from the second EC2 instance!</p>
+</body>
+</html>
