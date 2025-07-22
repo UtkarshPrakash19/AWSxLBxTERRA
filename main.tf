@@ -110,3 +110,7 @@ resource "aws_security_group" "alb_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+output "load_balancer_url" {
+  description = "URL to access your application via ALB"
+  value       = aws_lb.my_alb.dns_name
+}
