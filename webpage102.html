@@ -1,22 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Server 2 - Welcome</title>
+    <meta charset="UTF-8">
+    <title>🚀 Server 2 - iOS Styled</title>
     <style>
         body {
-            background-color: #fff0f0;
-            color: #4a4a4a;
-            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
             text-align: center;
-            padding-top: 100px;
         }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+
         h1 {
-            color: #e91e63;
+            color: #007aff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin: 8px 0;
+        }
+
+        .info {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
+    <script>
+        function loadDateTime() {
+            const now = new Date();
+            document.getElementById("datetime").textContent = now.toLocaleString();
+        }
+
+        window.onload = loadDateTime;
+    </script>
 </head>
 <body>
-    <h1>🙌 Welcome to Server 2</h1>
-    <p>This page is served from the second EC2 instance!</p>
+    <div class="card">
+        <h1>🙌 Server 2: Welcome!</h1>
+        <p>This page is served from EC2 Instance 2.</p>
+
+        <div class="info">
+            <p><strong>📅 Date & Time:</strong> <span id="datetime"></span></p>
+            <p><strong>📍 Location:</strong> Mumbai, India (Placeholder)</p>
+            <p><strong>🖥️ Instance ID:</strong> i-xxxxxxxxx2 (Example)</p>
+            <p><strong>💻 Tech Stack:</strong> AWS EC2 + Apache HTTPD + Terraform + Jenkins</p>
+            <p><strong>📄 HTML Source:</strong> <a href="https://github.com/UtkarshPrakash19/AWSxLBxTERRA/blob/main/webpage102.html" target="_blank">GitHub Page</a></p>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 Utkarsh Prakash | Powered by AWS Cloud
+        </div>
+    </div>
 </body>
 </html>
